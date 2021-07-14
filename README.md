@@ -30,7 +30,7 @@ Azure ポータルから Face API を利用するための Cognitive Services �
 |価格レベル|Standard S0|
 |契約条件の同意|チェックを入れる|
 
-1-3. 確認と作成をし、完了次第リソースへ移動しておきます。
+1-3. [確認および作成] をクリックし、完了次第リソースへ移動しておきます。
 
 ### 2. Python プログラムの環境構築
 
@@ -174,6 +174,14 @@ python compare_faces.py
 
 ![](https://user-images.githubusercontent.com/39784917/125599997-1ed5897c-5595-411a-babd-b8988e31e45b.png)
 
+
+### リソースの削除
+
+最後に、作成したリソースをリソースグループごと削除してください。
+
+![](https://user-images.githubusercontent.com/39784917/125601779-a6df8fb6-82a9-4a00-80a3-63a731a8f074.png)
+
+お疲れさまでした！
 
 
 ## 参考資料
