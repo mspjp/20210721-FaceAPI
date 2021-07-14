@@ -29,7 +29,7 @@ def main():
 
 
 def CompareFaces(image_1, image_2):
-    print('Comparing faces in ', image_1, 'and', image_2)
+    print('Comparing faces in', image_1, 'and', image_2)
 
     # image_1 にいる人が image_2 にいるかどうか確認
     with open(image_1, mode="rb") as image_data:

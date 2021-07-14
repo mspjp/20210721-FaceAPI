@@ -134,7 +134,36 @@ Results saved in detected_faces.jpg
 
 メガネに関する情報以外にも様々な要素を取得できます。詳しくは ['FaceAttributes' クラスのドキュメント](https://docs.microsoft.com/ja-jp/dotnet/api/microsoft.azure.cognitiveservices.vision.face.models.faceattributes) の Properties を参照してください。
 
-### 5. 顔比較プログラムの実装
+### 5. 顔比較プログラムの実行
+
+1人の顔の映った画像 'personA.jpg' と、複数人の顔の映った画像 'people1.jpg' があります。'people1.jpg' から 'personA.jpg' に映った人を探してみましょう。
+
+5-1. 'compare_faces.py' を実行してください。60行目の `face_client.face.find_similar` でメソッドで、第1引数に与えた顔が第2引数で与えた複数の顔の中に存在するか探しています。
+
+```
+python compare_faces.jpg
+```
+
+5-2. 成功すると以下のような出力とともに、'face_to_match.jpg' と 'matched_faces.jpg' が出力されます。
+
+```
+Comparing faces in images/personA.jpg and images/people1.jpg
+```
+
+以下の 'face_to_match.jpg' は、'personA.jpg' から顔検出されたもので、この顔を 'people1.jpg' から探しています。
+
+![](https://user-images.githubusercontent.com/39784917/125598604-e6f85f60-a69c-498b-994c-e768bfdfccb1.png)
+
+以下の 'matched_faces.jpg' は、上記の顔にマッチした 'people1.jpg' 内の顔をアノテーションしたものです。
+
+![](https://user-images.githubusercontent.com/39784917/125598655-706b5ccc-b3c1-4036-9ff8-40d8d34396cb.png)
+
+5-3. 探す顔を左側の人に変更してみます。'compare_faces.py' の24行目 `personA.jpg` を `personB.jpg` に変更してください。24行目は以下のようになります。
+
+```Python
+person_image = os.path.join('images','personB.jpg')
+```
+
 
 ## 参考資料
 - [Microsoft Learn | Detect, analyze, and recognize faces](https://docs.microsoft.com/learn/modules/detect-analyze-recognize-faces/)
