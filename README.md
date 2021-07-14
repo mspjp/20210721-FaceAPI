@@ -9,10 +9,10 @@ MS Tech Camp #9
 - 仮想マシンでも可能
 
 ### Python ライブラリのインストール
+
+以下のコマンドで "requirements.txt" に記載の Python ライブラリを一括インストールする。
 ```
-pip install python-dotenv
-pip install pillow
-pip install matplotlib
+pip install -r requirements.txt
 ```
 
 ## 概要

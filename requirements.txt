@@ -1,0 +1,4 @@
+azure-cognitiveservices-vision-face
+matplotlib
+Pillow
+python-dotenv
