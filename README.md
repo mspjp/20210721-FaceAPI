@@ -17,11 +17,11 @@ Face API を使って画像から顔を検出し、分析してみます。
 
 ### 1. Azure ポータルでリソースを作成する
 
-Azure ポータルから Face API を利用するための Cognitive Services のリソースを作成します。
+Azure ポータルから Face API を利用するためのリソースを作成します。
 
-1-1. Cognitive Services を検索し、[作成] をクリックします。
+1-1. Face APIs と検索し、[作成] をクリックします。
 
-![](https://user-images.githubusercontent.com/39784917/125489210-54a459f5-d036-4a59-a273-9b1829410a16.png)
+![](https://user-images.githubusercontent.com/39784917/125607839-3f6f3e66-1202-484c-a676-9279f30db226.png)
 
 1-2. 必要事項を記入します。
 
@@ -31,8 +31,8 @@ Azure ポータルから Face API を利用するための Cognitive Services �
 |リソースグループ|rg-mstechcamp9|
 |リージョン|東日本|
 |名前|cog-mstechcamp9|
-|価格レベル|Standard S0|
-|契約条件の同意|チェックを入れる|
+|価格レベル|Free F0|
+|米国警察によって使用されないことの証明|チェックをする|
 
 1-3. [確認および作成] をクリックし、完了次第リソースへ移動しておきます。
 
