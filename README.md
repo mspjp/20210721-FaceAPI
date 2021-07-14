@@ -164,6 +164,17 @@ Comparing faces in images/personA.jpg and images/people1.jpg
 person_image = os.path.join('images','personB.jpg')
 ```
 
+5-4. 再度 'compare_faces.py' を実行してください。
+
+```
+python compare_faces.py
+```
+
+5-5. 出力された 'matched_faces.jpg' を確認すると、左側の人にマッチしていることが分かります。
+
+![](https://user-images.githubusercontent.com/39784917/125599997-1ed5897c-5595-411a-babd-b8988e31e45b.png)
+
+
 
 ## 参考資料
 - [Microsoft Learn | Detect, analyze, and recognize faces](https://docs.microsoft.com/learn/modules/detect-analyze-recognize-faces/)
