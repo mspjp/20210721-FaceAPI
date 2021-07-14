@@ -1,5 +1,9 @@
-# 20210714-FaceAPI
-MS Tech Camp #9
+<h1>MS Tech Camp #9 </br>
+Face API で画像内の顔を検出・分析してみよう！</h1>
+
+[MS Tech Camp #9](https://mspjp.connpass.com/event/217437/) で使用するハンズオン資料です。
+
+Face API を使って画像から顔を検出し、分析してみます。
 
 
 ## 環境
