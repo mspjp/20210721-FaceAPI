@@ -21,7 +21,7 @@ def main():
         credentials = CognitiveServicesCredentials(cog_key)
         face_client = FaceClient(cog_endpoint, credentials)
 
-        DetectFaces(os.path.join('images','people.jpg'))
+        DetectFaces(os.path.join('images','people1.jpg'))
 
     except Exception as ex:
         print(ex)
@@ -32,7 +32,7 @@ def DetectFaces(image_file):
 
     # 顔の取得
     with open(image_file, mode="rb") as image_data:
-        detected_faces = face_client.face.detect_with_stream(image=image_data, return_face_attributes=[FaceAttributeType.glasses])
+        detected_faces = face_client.face.detect_with_stream(image=image_data)
 
         if len(detected_faces) > 0:
             print(len(detected_faces), 'faces detected.')
@@ -48,10 +48,10 @@ def DetectFaces(image_file):
             for face in detected_faces:
 
                 # 顔情報の取得
-                print('\nFace ID: {}'.format(face.face_id))
-                detected_attributes = face.face_attributes.as_dict()              
-                if 'glasses' in detected_attributes:
-                    print(' - Glasses:{}'.format(detected_attributes['glasses']))
+                # --
+                # --
+                # --
+                # --
 
                 # アノテーション
                 r = face.face_rectangle # 4つ角の座標を取得

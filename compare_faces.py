@@ -22,8 +22,8 @@ def main():
         credentials = CognitiveServicesCredentials(cog_key)
         face_client = FaceClient(cog_endpoint, credentials)
 
-        person_image = os.path.join('images','person1.jpg')
-        CompareFaces(person_image, os.path.join('images','people.jpg'))                
+        person_image = os.path.join('images','personA.jpg')
+        CompareFaces(person_image, os.path.join('images','people1.jpg'))                
 
     except Exception as ex:
         print(ex)
