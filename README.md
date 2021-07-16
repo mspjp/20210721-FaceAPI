@@ -34,6 +34,8 @@ Azure ポータルから Face API を利用するためのリソースを作成�
 |価格レベル|Free F0|
 |米国警察によって使用されないことの証明|チェックをする|
 
+※サブスクリプションが Azure for Students の場合、価格レベル [Free F0] ではリソースを作成できない場合があります。作成に失敗する場合、価格レベル [Standard S1] をお試しください。[Standard S1] では 1000 トランザクションにつき 112 円（[価格表](https://azure.microsoft.com/ja-jp/pricing/details/cognitive-services/face-api/#pricing)）かかりますが、Azure for Students では 100$ 分まで無料でご利用頂けます。
+
 1-3. [確認および作成] をクリックし、完了次第リソースへ移動しておきます。
 
 ### 2. Python プログラムの環境構築
@@ -49,7 +51,7 @@ cd 20210721-FaceAPI/
 
 2-2. 必要なライブラリのインストール
 
-以下のコマンドで "requirements.txt" に記載の Python ライブラリを一括インストールする。
+以下のコマンドで "requirements.txt" に記載された Python ライブラリを一括インストールします。
 ```
 pip install -r requirements.txt
 ```
@@ -63,7 +65,7 @@ COG_SERVICE_ENDPOINT=[エンドポイント]
 COG_SERVICE_KEY=[キー 1]
 ```
 
-下記画像の場合、以下のように記入
+下記画像の場合、以下のように記入します。
 
 ```
 COG_SERVICE_ENDPOINT=https://cog-mstechcamp9.cognitiveservices.azure.com/
