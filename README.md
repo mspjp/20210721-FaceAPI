@@ -147,7 +147,7 @@ Results saved in detected_faces.jpg
 5-1. 'compare_faces.py' を実行してください。60行目の `face_client.face.find_similar` でメソッドで、第1引数に与えた顔が第2引数で与えた複数の顔の中に存在するか探しています。
 
 ```
-python compare_faces.jpg
+python compare_faces.py
 ```
 
 5-2. 成功すると以下のような出力とともに、'face_to_match.jpg' と 'matched_faces.jpg' が出力されます。
